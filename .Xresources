@@ -1,0 +1,51 @@
+*urxvt.font: xft:IBM Plex Mono Medium:size=12
+*urxvt.scrollBar: false
+
+urxvt*depth:32
+urxvt*background: rgba:0000/0000/0200/f010
+
+*urxvt.foreground:   #d3d3d3
+*urxvt.background:   #000000
+*urxvt.cursorColor:  #d3d3d3
+
+! key bindings
+*urxvt.perl-ext: default,url-select
+*urxvt.perl-ext-common: default,fullscreen
+*urxvt.keysym.F11: perl:fullscreen:switch
+
+! special
+*.foreground:   #93a1a1
+*.background:   #002b36
+*.cursorColor:  #93a1a1
+
+! black
+*.color0:       #002b36
+*.color8:       #657b83
+
+! red
+*.color1:       #dc322f
+*.color9:       #dc322f
+
+! green
+*.color2:       #5c9900
+*.color10:      #5d9900
+
+! yellow
+*.color3:       #ff9c00
+*.color11:      #ff9c00
+
+! blue
+*.color4:       #007fd8
+*.color12:      #2e8fd2
+
+! magenta
+*.color5:       #f02043
+*.color13:      #f02043
+
+! cyan
+*.color6:       #0dcdcd
+*.color14:      #14ffff
+
+! white
+*.color7:       #e5e5e5
+*.color15:      #ffffff

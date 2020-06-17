@@ -14,6 +14,11 @@
 				<command>telegram-desktop</command>
 			</action>
 		</item>
+		<item label="» Hexchat">
+			<action name="Execute">
+				<command>hexchat</command>
+			</action>
+		</item>
 		<item label="» Discord">
 			<action name="Execute">
 				<command>Discord</command>

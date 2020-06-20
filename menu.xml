@@ -2,44 +2,64 @@
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
 	<!-- Internet menu -->
-
-	<menu id="apps-net-menu" label="Internet">
-		<item label="» Chromium">
+	<menu id="apps-browsers-menu" label="Internet">
+		<separator label="Internet" />
+		<item label="➔ Chromium">
 			<action name="Execute">
 				<command>chromium</command>
 			</action>
 		</item>
-		<item label="» Telegram">
+		<item label="➔ Firefox">
+			<action name="Execute">
+				<command>firefox</command>
+			</action>
+		</item>
+	</menu>
+
+	<!-- Messenger apps menu -->
+	<menu id="apps-communication-menu" label="Messenger">
+		<separator label="Messenger" />
+		<item label="➔ Telegram">
 			<action name="Execute">
 				<command>telegram-desktop</command>
 			</action>
 		</item>
-		<item label="» Hexchat">
+		<item label="➔ Hexchat">
 			<action name="Execute">
 				<command>hexchat</command>
 			</action>
 		</item>
-		<item label="» Discord">
+		<item label="➔ Discord">
 			<action name="Execute">
 				<command>Discord</command>
 			</action>
 		</item>
 	</menu>
 
-	<!-- Editors menu -->
-
-	<menu id="apps-editors-menu" label="Editors">
-		<item label="» Sublime Text">
+	<!-- Text editors menu -->
+	<menu id="apps-editors-menu" label="Text editor">
+		<separator label="Text editor" />
+		<item label="➔ Sublime Text">
 			<action name="Execute">
 				<command>subl3</command>
+			</action>
+		</item>
+		<item label="➔ Visual Studio Code">
+			<action name="Execute">
+				<command>oss-code</command>
+			</action>
+		</item>
+		<item label="➔ Vim">
+			<action name="Execute">
+				<command>urxvt -e vim</command>
 			</action>
 		</item>
 	</menu>
 
 	<!-- Terminals menu -->
-
-	<menu id="apps-term-menu" label="Terminals">
-		<item label="» urxvt">
+	<menu id="apps-term-menu" label="Terminal">
+		<separator label="Terminal" />
+		<item label="➔ rxvt-unicode">
 			<action name="Execute">
 				<command>urxvt</command>
 			</action>
@@ -47,30 +67,29 @@
 	</menu>
 
 	<!-- System menu -->
-
 	<menu id="system-menu" label="System">
-		<item label="» Openbox Configuration Manager">
+		<item label="➔ Openbox Configuration Manager">
 			<action name="Execute">
 				<command>obconf</command>
 			</action>
 		</item>
 		<separator />
-		<item label="» Reconfigure Openbox">
+		<item label="➔ Reconfigure Openbox">
 			<action name="Reconfigure" />
 		</item>
 	</menu>
 
 	<!-- Root menu -->
-
 	<menu id="root-menu" label="Openbox 3">
 		<separator label="Applications" />
-		<menu id="apps-net-menu"/>
+		<menu id="apps-browsers-menu"/>
+		<menu id="apps-communication-menu"/>
 		<menu id="apps-editors-menu"/>
 		<menu id="apps-term-menu"/>
 		<separator label="System" />
 		<menu id="system-menu"/>
 		<separator />
-		<item label="» Log Out">
+		<item label="➔ Log Out">
 			<action name="Exit">
 				<prompt>yes</prompt>
 			</action>

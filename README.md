@@ -5,3 +5,5 @@
 
 ## Font settings
 ![fonts](https://i.imgur.com/iW9GM1O.png)
+
+[![ForTheBadge built-with-love](http://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/fnogcps)
